@@ -1,0 +1,67 @@
+:root{
+    --primary-color: rgb(24, 26, 51);
+    --secondary-color: rgb(25, 25, 39);
+}
+
+body{
+    margin: 0;
+    background-color: var(--primary-color);
+}
+header{
+    padding: 25px;
+    display: flex;
+    justify-content: end;
+    background-color: var(--secondary-color);
+}
+.search{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie{
+    width: 300px;
+    margin: 15px;
+    background-color: var(--secondary-color);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.movie img{
+    width: 100%;
+}
+.movie-info{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.overview{
+    color: white;
+    padding: 5%;
+}
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color: red;
+}
+.movie-info span.green{
+    color: green;
+}

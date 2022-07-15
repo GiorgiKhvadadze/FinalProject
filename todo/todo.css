@@ -1,0 +1,112 @@
+:root{
+    --white-color: #fff;
+    --darker-color: #1F2937;
+    --darkest-color: #111827;
+    --light: #EEE;
+    --blue-color: #4B9CD3;
+    --gray: #525252;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark-color);
+    color: var(--light);
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+#todo-list-form{
+    display: flex;
+}
+input, button{
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: var(--blue-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.3rem;
+}
+#new-task-input::placeholder{
+    color: var(--white-color);
+}
+#new-task-submit{
+    color: var(--blue-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.8s;
+}
+#new-task-submit:hover{
+    color: var(--gray);
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#tasks .task .content{
+    flex:  1 1 0%;
+}
+#tasks .task .content .text{
+    color: var(--light);
+    font-size: 1.5rem;
+    width: 100%;
+    display: block;
+    transition: 0.8s;
+}
+#tasks .task .content .text:not(:read-only){
+    color: var(--darkest-color) 
+}
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: 0.8s;
+}
+.task .actions button:hover{
+    color: var(--white-color);
+}
